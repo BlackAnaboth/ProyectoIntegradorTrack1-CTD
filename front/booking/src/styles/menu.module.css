@@ -1,0 +1,153 @@
+
+.container {
+    background-color: rgb(255,255,252);
+    color: #263238;
+    position: fixed;
+    right: 0;
+    z-index: 1100;
+    width: 73.19vw;
+    height: 100vh;
+    transition: ease .7s;
+}
+
+.menuHeader{
+    background-color: #FBC02D;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.25rem;
+    height: 10.9375rem;
+    justify-content: space-between;
+    text-align: right;
+    width: 73.19vw;
+}
+
+.menuHeader div {
+    margin-right: 0.3rem;
+}
+
+.menuHeader .close{
+    height: 1.5625rem;
+    margin: 0.75rem 0 0 0.875rem;
+    width: 1.5rem;
+}
+
+.nameItem{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5625rem;
+}
+
+.nameItem div{
+    color: #263238;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.nameItem div:nth-child(2){
+    color: rgb(255,255,252);
+}
+
+#avatar{
+    background-color: rgb(255,255,252);
+    border-radius: 100%;
+    color: #263238;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    padding: 0.4rem .55rem;
+}
+
+.menuBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.userMenuBody{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-weight: 700;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.userMenuBody>div {
+    color: #263238;
+    margin: 1.4375rem 0.9375rem 0 0;
+    margin-right: 0.9375rem;
+    text-align: right;
+    width: 100%;
+}
+
+.userMenuBody .logout{
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.userMenuBody hr {
+    margin: .3rem 0 15rem 0;
+}
+
+.userMenuBody a{
+    color: #263238;
+    text-decoration: none;
+}
+
+.userMenuBody .logout a{
+    color: #FBC02D;
+    text-decoration: none;
+}
+
+.menuBody a{
+    color: #263238;
+    margin: 1.4375rem 0.625rem 1rem 0;
+    text-decoration: none;
+}
+
+.menuFooter{
+    align-items: center;
+    background-color: rgb(255,255,252);
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 3.625rem;
+    margin-right: 1.1875rem;
+    width: 73.19vw;
+    position: absolute;
+}
+
+.menuFooter img{
+    height: 1.4375rem;
+    margin: 0 0.9375rem 0 0.1275rem;
+    width: 1.491rem;
+}
+
+.separator{
+    border: 0.0625rem solid #263238;
+    width: 93%;
+}
+
+.hide{
+    transform: translate3d(100%, 0px, 0px);
+}
+
+.show{
+    transform: translate3d(0%, 0px, 0px);
+}
+
+@media screen and (min-width: 550px) {
+    .disableMenu{
+        display: none;
+    }
+}
